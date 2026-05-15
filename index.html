@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE LUXE Nail Institute & Studio | Elegant Artistry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        /* FORCED VISIBILITY CSS */
+        body {
+            background-color: #0D0D0D !important;
+            color: #F4EBE6 !important; /* Soft White/Nude */
+            font-family: 'Outfit', sans-serif !important;
+        }
+
+        /* All Headings White */
+        h1, h2, h3, h4, h5, h6 {
+            color: #FFFFFF !important;
+            font-family: 'Playfair Display', serif !important;
+        }
+
+        /* All Labels and Small Text Gold */
+        .label-gold {
+            color: #C5A059 !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5em !important;
+            font-size: 10px !important;
+            display: block !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        /* All Paragraphs Soft White */
+        p {
+            color: rgba(244, 235, 230, 0.6) !important;
+            line-height: 1.8 !important;
+        }
+
+        .gold-text {
+            color: #C5A059 !important;
+        }
+
+        .gold-gradient {
+            background: linear-gradient(135deg, #C5A059 0%, #E8CFC5 50%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #C5A059 !important;
+            color: #000000 !important;
+            padding: 16px 36px !important;
+            border-radius: 9999px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.2em !important;
+            font-size: 10px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.4s ease !important;
+            text-decoration: none !important;
+        }
+
+        .btn-outline {
+            background-color: transparent !important;
+            color: #C5A059 !important;
+            border: 2px solid #C5A059 !important;
+            padding: 16px 36px !important;
+            border-radius: 9999px !important;
+            font-weight: 800 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.2em !important;
+            font-size: 10px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            transition: all 0.4s ease !important;
+            text-decoration: none !important;
+        }
+
+        .luxe-card {
+            background: #161616 !important;
+            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            border-radius: 2rem !important;
+        }
+    </style>
+</head>
+<body class="bg-[#0D0D0D]">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-[1000] py-6 px-6 lg:px-20">
+        <div class="container mx-auto flex justify-between items-center bg-[#161616] rounded-full px-10 py-4 border border-white/10">
+            <div class="flex flex-col">
+                <span class="gold-text tracking-[0.4em] text-[8px] font-black uppercase">THE LUXE</span>
+                <span class="text-xl font-bold font-serif text-white uppercase">NAIL INSTITUTE</span>
+            </div>
+            <div class="hidden lg:flex items-center space-x-12 text-[10px] font-bold uppercase tracking-[0.2em]">
+                <a href="#home" class="text-white">Home</a>
+                <a href="#about" class="text-white">Studio</a>
+                <a href="#services" class="text-white">Services</a>
+                <a href="#gallery" class="text-white">Gallery</a>
+                <a href="#booking" class="btn-primary !py-2 !px-6">Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=1920" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0D0D0D] via-transparent to-[#0D0D0D]"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <span class="label-gold">West Delhi's Premier Studio</span>
+                <h1 class="text-6xl md:text-[9rem] font-black mb-8 leading-[0.85] tracking-tighter uppercase">
+                    Luxury Nails <br> <span class="gold-gradient italic">Define Elegance</span>
+                </h1>
+                <p class="text-lg md:text-2xl max-w-2xl mx-auto mb-12 uppercase tracking-widest font-light">
+                    Artistry • Extensions • Bridal mastery
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="#booking" class="btn-primary">Book Session</a>
+                    <a href="#gallery" class="btn-outline">View Designs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-32 bg-[#0D0D0D]">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
+            <div data-aos="fade-right">
+                <img src="https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg?auto=compress&cs=tinysrgb&w=800" class="rounded-[40px] opacity-60">
+            </div>
+            <div data-aos="fade-left">
+                <span class="label-gold">Our Story</span>
+                <h2 class="text-5xl md:text-7xl font-black mb-10 italic">Mastering <br><span class="gold-text not-italic">Confidence</span></h2>
+                <p class="text-xl leading-relaxed mb-10">
+                    Founded by Jahnvi, THE LUXE specializes in luxury nail extensions and bridal collections that tell a story.
+                </p>
+                <div class="flex gap-10">
+                    <div>
+                        <h4 class="text-4xl font-bold mb-1">5K+</h4>
+                        <p class="label-gold !mb-0 !tracking-widest">Clients</p>
+                    </div>
+                    <div>
+                        <h4 class="text-4xl font-bold mb-1">200+</h4>
+                        <p class="label-gold !mb-0 !tracking-widest">Artists</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-32 bg-[#121212]">
+        <div class="container mx-auto px-6 text-center mb-24">
+            <h2 class="text-5xl md:text-8xl font-black mb-6 italic">Signature <span class="gold-gradient not-italic">Services</span></h2>
+        </div>
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <!-- Card 1 -->
+            <div class="luxe-card overflow-hidden" data-aos="fade-up">
+                <img src="https://images.pexels.com/photos/3997381/pexels-photo-3997381.jpeg?auto=compress&cs=tinysrgb&w=800" class="h-64 w-full object-cover opacity-50">
+                <div class="p-10">
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Extensions</h3>
+                    <p class="text-sm mb-8">Bespoke acrylic or gel architecture.</p>
+                    <a href="#booking" class="btn-outline w-full">Book Now</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="luxe-card overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.pexels.com/photos/704815/pexels-photo-704815.jpeg?auto=compress&cs=tinysrgb&w=800" class="h-64 w-full object-cover opacity-50">
+                <div class="p-10 border-t border-[#C5A059]/20">
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Bridal Set</h3>
+                    <p class="text-sm mb-8">Hand-painted Swarovski art.</p>
+                    <a href="#booking" class="btn-primary w-full">Book Now</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="luxe-card overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.pexels.com/photos/3997378/pexels-photo-3997378.jpeg?auto=compress&cs=tinysrgb&w=800" class="h-64 w-full object-cover opacity-50">
+                <div class="p-10">
+                    <h3 class="text-2xl font-bold mb-4 uppercase">Gel Polish</h3>
+                    <p class="text-sm mb-8">Ultra-shine Korean premium gels.</p>
+                    <a href="#booking" class="btn-outline w-full">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="py-32 bg-[#0D0D0D]">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-5xl md:text-7xl font-black mb-12">Reserve <span class="italic gold-text font-serif">Luxury</span></h2>
+            <div class="bg-[#161616] p-12 md:p-20 rounded-[60px] border border-white/10 shadow-2xl">
+                <form class="space-y-8 text-left">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="label-gold !mb-2 !tracking-widest">Name</label>
+                            <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-full py-5 px-8 outline-none text-white">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="label-gold !mb-2 !tracking-widest">Phone</label>
+                            <input type="tel" placeholder="+91" class="w-full bg-white/5 border border-white/10 rounded-full py-5 px-8 outline-none text-white">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-7">Confirm Reservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-[#0D0D0D] border-t border-white/5 text-center">
+        <p class="label-gold !tracking-[0.8em] !mb-0">The Luxe Nail Studio</p>
+    </footer>
+
+    <script>
+        AOS.init({ once: true, duration: 1500 });
+    </script>
+</body>
+</html>
