@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 10, 10;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass-navbar {
+  @apply bg-luxe-black/80 backdrop-blur-lg border-b border-white/5;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E4B7 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxe-card {
+  @apply bg-luxe-dark border border-white/5 rounded-3xl overflow-hidden hover:border-luxe-gold/30 transition-all duration-500 shadow-2xl shadow-black;
+}
+
+.nude-glow {
+  box-shadow: 0 0 40px rgba(232, 207, 197, 0.1);
+}
+
+.btn-primary {
+  @apply px-8 py-4 bg-luxe-gold text-black font-bold rounded-full hover:bg-luxe-goldLight transition-all duration-300 shadow-lg shadow-luxe-gold/20 flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply px-8 py-4 border border-luxe-gold/30 text-luxe-gold font-bold rounded-full hover:bg-luxe-gold hover:text-black transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
